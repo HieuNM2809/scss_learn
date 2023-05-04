@@ -1,0 +1,41 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+.app .header {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 20px;
+}
+.app .header .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.app .header ul {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  list-style-type: none;
+}
+.app .header ul li {
+  padding: 10px;
+  color: white;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.app .container {
+  background-color: blanchedalmond;
+  height: 200px;
+}
+.app .footer {
+  background-color: black;
+  height: 200px;
+}

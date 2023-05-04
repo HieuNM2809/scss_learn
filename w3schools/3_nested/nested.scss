@@ -1,0 +1,43 @@
+$maxWidth  : 100vw;
+$maxHeight : 100vh;
+$colorWhite: white;
+$tenPx     : 10px;
+
+@mixin itemHeader($color, $width) {
+    padding: $width;
+    color: $color;
+    background-color: aqua;
+    margin: $width;
+    border-radius: $width;
+    cursor: pointer;
+}
+.app {
+    width: $maxWidth;
+    height: $maxHeight;
+    .header {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+
+        .logo {
+            align-self: center;
+        }
+        ul {
+            display: flex !important;
+            list-style-type: none;
+
+            li {
+                @include itemHeader($colorWhite, $tenPx);
+            }
+        }
+    }
+    .container {
+        background-color: blanchedalmond;
+        height: 200px;
+    }
+    .footer {
+        background-color: black;
+        height: 200px;
+    }
+}
