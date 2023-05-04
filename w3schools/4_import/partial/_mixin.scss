@@ -1,4 +1,4 @@
-@mixin itemHeader($color, $width) {
+@mixin itemHeader($color, $width : 20px) {
     padding: $width;
     color: $color;
     margin: $width;

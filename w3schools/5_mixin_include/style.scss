@@ -1,0 +1,40 @@
+//  ==================== Tạo mixin ======================
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+.danger {
+    @include important-text;
+    background-color: green;
+}
+
+
+
+//  ==================== Đặt biến ======================
+/* Define mixin with two arguments */
+@mixin bordered($color, $width) {
+    border: $width solid $color;
+}
+
+.myArticle {
+    @include bordered(blue, 1px); // Call mixin with two values
+}
+
+.myNotes {
+    @include bordered(red, 2px); // Call mixin with two values
+}
+
+
+
+
+//  ==================== Giá trị mặc định ======================
+@mixin bordered($color: blue, $width: 1px) {
+    border: $width solid $color;
+}
+
+.myTips {
+    @include bordered($color: orange);
+}
