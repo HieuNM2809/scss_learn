@@ -1,0 +1,50 @@
+@import '../partial/color';
+@import '../partial/variables';
+@import '../partial/mixin';
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.buttonNavCheck{
+    background-color: $colorBlueButton;
+}
+.app {
+    width: $maxWidth;
+    height: $maxHeight;
+    .header {
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        background-color: $colorBlue;
+
+        .logo {
+            align-self: center;
+            font-size: 34px;
+            font-weight: 700;
+            color: $colorWhite;
+        }
+        ul {
+            display: flex !important;
+            list-style-type: none;
+
+            li {
+                @include itemHeader($colorWhite, $tenPx);
+                // @extend .buttonNav;
+            }
+        }
+    }
+    .container {
+        background-color: blanchedalmond;
+        height: 200px;
+    }
+    .footer {
+        background-color: black;
+        height: 200px;
+    }
+}

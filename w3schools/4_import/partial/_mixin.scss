@@ -1,0 +1,8 @@
+@mixin itemHeader($color, $width) {
+    padding: $width;
+    color: $color;
+    margin: $width;
+    border-radius: $width;
+    cursor: pointer;
+    font-size: 16px;
+}
