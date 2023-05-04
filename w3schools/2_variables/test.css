@@ -1,0 +1,8 @@
+.header {
+  height: 10px;
+  color: wheat;
+  width: 100vw;
+}
+.header .title {
+  color: red;
+}

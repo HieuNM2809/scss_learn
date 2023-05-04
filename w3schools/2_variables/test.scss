@@ -1,0 +1,12 @@
+$height   : 10px;
+$maxWidth : 100vw;
+$colorRed : red;
+
+.header{
+    height: $height;
+    color: wheat; 
+    width: $maxWidth;
+    .title{
+        color: $colorRed;
+    }
+}
