@@ -1,0 +1,12 @@
+/* Define standard variables and values for website */
+.title, body {
+  color: red !important;
+  border: 1px;
+}
+
+/* Use the variables */
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
